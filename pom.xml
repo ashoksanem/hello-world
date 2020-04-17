@@ -164,13 +164,13 @@
           <version>8.0.0.M1</version>
         </plugin>
         
-        <plugin>
+<!--        <plugin>
           <artifactId>maven-deploy-plugin</artifactId>
           <version>3.0.0-M1</version>
             <configuration>
               <deployAtEnd>true</deployAtEnd>
             </configuration>
-        </plugin>       
+        </plugin> -->      
       </plugins>
     </pluginManagement>
   </build>
