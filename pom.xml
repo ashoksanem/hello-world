@@ -25,12 +25,12 @@
     <repository>
         <id>central</id>
         <name>jfrog-artifactory-releases</name>
-        <url>http://35.223.28.6:8081/artifactory/hello-world-release</url>
+        <url>http://34.68.159.180:8081/artifactory/hello-world-release</url>
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
         <name>jfrog-artifactory-snapshots</name>
-        <url>http://35.223.28.6:8081/artifactory/hello-world-snapshot</url>
+        <url>http://34.68.159.180:8081/artifactory/hello-world-snapshot</url>
     </snapshotRepository>
   </distributionManagement>
 
