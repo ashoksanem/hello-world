@@ -4,7 +4,7 @@
 <html>
 <style>
 body {
-  background-image: url('bg-img.jpg');
+  background-image: url('bg-img2.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -12,20 +12,19 @@ body {
   color:#2a4658;
   
 }
-h1{
-position:absolute;
-top:60px;
-
+h1 {
+    position: absolute;
+    top: 200px;
+    left: 475px;
 }
 </style
 <body >
 
 
 
-<div style="background-image: url('img_girl.jpg');">
+<div>
 <h1> Hello, Welcome to<br> Simple DevOps Project !!   </h1>
-<!--<h2> Deploying on a kubernetes using ansible</h2>
-<h2> Glad to see you here </h2> -->
+<p>Topic 1 </p>
 </div>
 
 </body>
