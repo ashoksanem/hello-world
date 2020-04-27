@@ -20,21 +20,7 @@
     <module>server</module>
     <module>webapp</module>
   </modules>
-
-  <distributionManagement>
-    <repository>
-        <id>central</id>
-        <name>jfrog-artifactory-releases</name>
-        <url>http://35.226.138.114:8081/artifactory/hello-world-release</url>
-    </repository>
-    <snapshotRepository>
-        <id>snapshots</id>
-        <name>jfrog-artifactory-snapshots</name>
-        <url>http://35.226.138.114:8081/artifactory/hello-world-snapshot</url>
-    </snapshotRepository>
-  </distributionManagement>
-
-  <build>
+ <build>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -163,7 +149,13 @@
           <artifactId>jetty-maven-plugin</artifactId>
           <version>8.0.0.M1</version>
         </plugin>
-        
+       
+        <plugin>
+           <groupId>org.sonarsource.scanner.maven</groupId>
+           <artifactId>sonar-maven-plugin</artifactId>
+           <version>3.6.0.1398</version>
+        </plugin>
+             
         <plugin>
           <artifactId>maven-deploy-plugin</artifactId>
           <version>3.0.0-M1</version>
@@ -229,5 +221,18 @@
   <prerequisites>
     <maven>3.0.3</maven>
   </prerequisites>
+ 
+ <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>jfrog-artifactory-releases</name>
+        <url>http://34.68.2.125:8081/artifactory/hello-world-release</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>jfrog-artifactory-snapshots</name>
+        <url>http://34.68.2.125:8081/artifactory/hello-world-snapshot</url>
+    </snapshotRepository>
+ </distributionManagement>
 
 </project>
