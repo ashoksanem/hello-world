@@ -213,8 +213,10 @@
         <groupId>org.sonarsource.scanner.maven</groupId>
         <artifactId>sonar-maven-plugin</artifactId>
         <version>3.2</version>
-     </dependency>
-     <profiles>
+     </dependency>     
+    </dependencies>
+  </dependencyManagement>
+  <profiles>
 <profile>
 <id>sonar</id>
 <activation>
@@ -227,10 +229,7 @@ http://35.239.76.0
 </sonar.host.url>
 </properties>
 </profile>
-</profiles>        
-    </dependencies>
-  </dependencyManagement>
-
+</profiles>
   <scm>
     <connection>scm:git:git@github.com:jleetutorial/maven-project.git</connection>
     <developerConnection>scm:git:git@github.com:jleetutorial/maven-project.git</developerConnection>
